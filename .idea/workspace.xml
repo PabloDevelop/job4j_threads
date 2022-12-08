@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acfe87c9-5b44-49a5-9fd6-37a9d6815b62" name="Changes" comment="2. Запуск нити. Thread#start() [#1016 #369148]">
+    <list default="true" id="acfe87c9-5b44-49a5-9fd6-37a9d6815b62" name="Changes" comment="Косяки">
       <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/concurrent/ThreadState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/concurrent/ThreadState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/job4j/concurrent/ThreadState.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +39,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "profiler.jvm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;profiler.jvm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.ThreadState">
     <configuration name="ConcurrentOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConcurrentOutput" />
@@ -90,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670525863193</updated>
       <workItem from="1670525864418" duration="4861000" />
+      <workItem from="1670531089212" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="Create repo">
       <created>1670526433360</created>
@@ -168,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670529797882</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Косяки">
+      <created>1670531175393</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670531175393</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +201,7 @@
     <MESSAGE value="Добавил файл readme.md" />
     <MESSAGE value="Change readme.md" />
     <MESSAGE value="2. Запуск нити. Thread#start() [#1016 #369148]" />
-    <option name="LAST_COMMIT_MESSAGE" value="2. Запуск нити. Thread#start() [#1016 #369148]" />
+    <MESSAGE value="Косяки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Косяки" />
   </component>
 </project>
