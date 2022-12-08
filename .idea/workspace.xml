@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acfe87c9-5b44-49a5-9fd6-37a9d6815b62" name="Changes" comment="3. Состояние нити. [#229175]" />
+    <list default="true" id="acfe87c9-5b44-49a5-9fd6-37a9d6815b62" name="Changes" comment="3. Состояние нити. [#229175 #369168]">
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkstyle-cachefile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,15 +38,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;profiler.jvm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/pavelberzkaln/Projects/job4j_threads",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "profiler.jvm"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/.idea" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.ThreadState">
     <configuration name="ConcurrentOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConcurrentOutput" />
@@ -88,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670525863193</updated>
       <workItem from="1670525864418" duration="4861000" />
-      <workItem from="1670531089212" duration="840000" />
+      <workItem from="1670531089212" duration="1307000" />
     </task>
     <task id="LOCAL-00001" summary="Create repo">
       <created>1670526433360</created>
@@ -181,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670531525601</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Косяки без гитигнор">
+      <created>1670532058163</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670532058163</updated>
+    </task>
+    <task id="LOCAL-00015" summary="3. Состояние нити. [#229175 #369168]">
+      <created>1670532108347</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670532108347</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +231,8 @@
     <MESSAGE value="2. Запуск нити. Thread#start() [#1016 #369148]" />
     <MESSAGE value="Косяки" />
     <MESSAGE value="3. Состояние нити. [#229175]" />
-    <option name="LAST_COMMIT_MESSAGE" value="3. Состояние нити. [#229175]" />
+    <MESSAGE value="Косяки без гитигнор" />
+    <MESSAGE value="3. Состояние нити. [#229175 #369168]" />
+    <option name="LAST_COMMIT_MESSAGE" value="3. Состояние нити. [#229175 #369168]" />
   </component>
 </project>
