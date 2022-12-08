@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acfe87c9-5b44-49a5-9fd6-37a9d6815b62" name="Changes" comment="Косяки">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/concurrent/ThreadState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/concurrent/ThreadState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/job4j/concurrent/ThreadState.class" afterDir="false" />
-    </list>
+    <list default="true" id="acfe87c9-5b44-49a5-9fd6-37a9d6815b62" name="Changes" comment="3. Состояние нити. [#229175]" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670525863193</updated>
       <workItem from="1670525864418" duration="4861000" />
-      <workItem from="1670531089212" duration="317000" />
+      <workItem from="1670531089212" duration="840000" />
     </task>
     <task id="LOCAL-00001" summary="Create repo">
       <created>1670526433360</created>
@@ -177,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670531175393</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="3. Состояние нити. [#229175]">
+      <created>1670531525601</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670531525601</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +206,7 @@
     <MESSAGE value="Change readme.md" />
     <MESSAGE value="2. Запуск нити. Thread#start() [#1016 #369148]" />
     <MESSAGE value="Косяки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Косяки" />
+    <MESSAGE value="3. Состояние нити. [#229175]" />
+    <option name="LAST_COMMIT_MESSAGE" value="3. Состояние нити. [#229175]" />
   </component>
 </project>
