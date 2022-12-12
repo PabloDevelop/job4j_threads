@@ -20,7 +20,7 @@ public class ConsoleProgress implements Runnable {
             while (!Thread.currentThread().isInterrupted()) {
                 Thread.sleep(500);
                 System.out.print("\r Loading ... " + chars[i++]);
-                if (i == 3) {
+                if (i == chars.length) {
                     i = 0;
                 }
             }
