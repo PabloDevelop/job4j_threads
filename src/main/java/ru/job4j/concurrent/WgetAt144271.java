@@ -8,7 +8,7 @@ import java.net.URL;
 public class WgetAt144271 implements Runnable {
     private final String url;
     private final int speed;
-    private static final String url_regex = "^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
+    private static final String URL_REGEX = "^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
 
     public WgetAt144271(String url, int speed) {
         this.url = url;
@@ -19,7 +19,7 @@ public class WgetAt144271 implements Runnable {
         if (args.length == 0) {
             throw new IllegalArgumentException("Args length is null.");
         }
-        if (!args[0].matches(url_regex)) {
+        if (!args[0].matches(URL_REGEX)) {
             throw new IllegalArgumentException("URL isn't correct");
         }
         if (Integer.parseInt(args[1]) <= 0) {
