@@ -59,8 +59,10 @@ public class WgetAt144271 implements Runnable {
                 }
                 fileOutputStream.write(dataBuffer, 0, bytesRead);
             }
-        } catch (IOException | InterruptedException e) {
+        } catch (IOException e) {
             e.printStackTrace();
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
         }
     }
 
