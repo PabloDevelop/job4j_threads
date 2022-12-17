@@ -11,17 +11,25 @@ public final class ParseFile {
     }
 
     public synchronized String genContent(Predicate<Character> filter) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
         try (BufferedInputStream i = new BufferedInputStream(new FileInputStream(file))) {
             int data;
-            while ((data = i.read()) > 0) {
+            while ((data = i.read()) != 0) {
                 if (filter.test((char) data)) {
-                    output += (char) data;
+                    output.append((char) data);
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return output;
+        return output.toString();
+    }
+
+    public synchronized void predicate1() {
+        genContent(i -> i < 'e');
+    }
+
+    public synchronized void predicate2() {
+        genContent(i -> i > '0');
     }
 }
