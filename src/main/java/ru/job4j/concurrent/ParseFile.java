@@ -10,7 +10,7 @@ public final class ParseFile {
         this.file = file;
     }
 
-    public synchronized String genContent(Predicate<Character> filter) {
+    public synchronized String content(Predicate<Character> filter) {
         StringBuilder output = new StringBuilder();
         try (BufferedInputStream i = new BufferedInputStream(new FileInputStream(file))) {
             int data;
@@ -25,11 +25,11 @@ public final class ParseFile {
         return output.toString();
     }
 
-    public synchronized void predicate1() {
-        genContent(i -> i < 'e');
+    public synchronized void getContent() {
+        content(i -> true);
     }
 
-    public synchronized void predicate2() {
-        genContent(i -> i > '0');
+    public synchronized void getContentWithoutUnicode() {
+        content(i -> i < 0x80);
     }
 }
