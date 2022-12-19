@@ -8,7 +8,7 @@ public class AccountStorage {
     private final HashMap<Integer, Account> accounts = new HashMap<>();
 
     public synchronized boolean add(Account account) {
-        return accounts.put(account.id(), account) != null;
+        return accounts.put(account.id(), account) == null;
     }
 
     public synchronized boolean update(Account account) {
