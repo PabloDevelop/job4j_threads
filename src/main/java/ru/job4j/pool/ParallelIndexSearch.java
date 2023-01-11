@@ -1,19 +1,25 @@
 package ru.job4j.pool;
 
+import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
-public class ParallelIndexSearch extends RecursiveTask<Integer> {
+public class ParallelIndexSearch<T> extends RecursiveTask<Integer> {
     private final static int ARRAY_LENGTH_TO_DO_LINEAR = 10;
     private final int from;
     private final int to;
-    private final Object[] array;
-    private final Object objectToSearch;
+    private final T[] array;
+    private final T objectToSearch;
 
-    public ParallelIndexSearch(Object[] array, int from, int to, Object objectToSearch) {
+    public ParallelIndexSearch(T[] array, int from, int to, T objectToSearch) {
         this.array = array;
         this.from = from;
         this.to = to;
         this.objectToSearch = objectToSearch;
+    }
+
+    public static <T> int searchIndex(T[] array, T obj) {
+        ForkJoinPool forkJoinPool = new ForkJoinPool();
+        return forkJoinPool.invoke(new ParallelIndexSearch<>(array, 0, array.length, obj));
     }
 
     /**
@@ -34,19 +40,17 @@ public class ParallelIndexSearch extends RecursiveTask<Integer> {
 
     @Override
     protected Integer compute() {
-        int rsl;
         if (to - from <= ARRAY_LENGTH_TO_DO_LINEAR) {
-            rsl = search();
+            return search();
         } else {
             int mid = (to + from) >>> 1;
-            ParallelIndexSearch searchLeft = new ParallelIndexSearch(array, from,
+            ParallelIndexSearch<T> searchLeft = new ParallelIndexSearch<>(array, from,
                     mid, objectToSearch);
-            ParallelIndexSearch searchRight = new ParallelIndexSearch(array, mid + 1,
+            ParallelIndexSearch<T> searchRight = new ParallelIndexSearch<>(array, mid + 1,
                     to, objectToSearch);
             searchLeft.fork();
             searchRight.fork();
-            rsl = searchLeft.join() > 0 ? searchLeft.join() : searchRight.join();
+            return Math.max(searchLeft.join(), searchRight.join());
         }
-        return rsl;
     }
 }
