@@ -18,7 +18,6 @@ public class ParallelIndexSearchTest {
                         Double.parseDouble("8.55"), 'v', 'c', 'b'}, 'b')).isEqualTo(10);
     }
 
-    //
     @Test
     public void whenNoElementInArray() {
         assertThat(ParallelIndexSearch.searchIndex(
