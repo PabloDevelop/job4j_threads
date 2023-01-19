@@ -47,3 +47,5 @@
     •Docker
     •Kafka
     •Kubernetes
+
+Создание ветки из IDEA.
